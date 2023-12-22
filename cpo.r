@@ -36,18 +36,18 @@ cpo <- function(m, ...) {
 
             source("cpoIndex.r")
 
-            cpoVal <- cpoIndex(m)
+            cpoResult <- cpoIndex(m)
           
           if( extra.arg[['null.model']] ){
             
             null.model <- cpoRand(m, rand = extra.arg[['rand']] )
             
-            cpo <- list(CPO = cpoVal,
+            cpoResult <- list(CPO = cpoResult,
                            null.dist = null.model)
             
           }
           
-          return(cpo)
+          return(cpoResult)
           
         }
         

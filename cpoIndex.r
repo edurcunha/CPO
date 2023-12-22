@@ -8,7 +8,7 @@
 #  ARGUMENTS
 # m: A matrix of two species (columns) by n samples (rows).
 
-cpo_index <- function(m) {
+cpoIndex <- function(m) {
 
     n_i <- sum(m[,1])
     n_j <- sum(m[,2])
