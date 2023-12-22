@@ -42,6 +42,7 @@ cpoResults <- cpoPairWise(m)
 cpoResults
 ```
 
+Randomizations are dandled similarly
 
 ```{r, echo=FALSE}
 cpoPairWise(m, null.model=TRUE, rand=999)
