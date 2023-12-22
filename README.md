@@ -15,9 +15,36 @@ The files and functions required for this example are available for download fro
 source('CPO.R')
 ```
 
-Data entry is a collection of samples (numeric matrix), with samples a rows and species as columns. For a single pair of species, the tool calculates the CPO value and, optionally, returns a distribution of iteratively randomized occurrences of species among samples (generally used to obtain the probability which the observed index differ from random). Multiple species are also allowed as entry data, and, in this case, the tool calculates the index for each pair of species in the collection of samples.
-To illustrate, I constructed a synthetic dataset ('OccurrenceDataset.csv') containing a series of samples registering the occurrence of 3 hypothetical species. This dataset, saved as a .csv file, can be loaded using the 'read.csv()' function.
+Data entry is a collection of samples (numeric matrix), with samples a rows and species as columns. To illustrate, I constructed a synthetic dataset ('OccurrenceDataset.csv') containing a series of samples registering the occurrence of 3 hypothetical species. This dataset, saved as a .csv file, can be loaded using the 'read.csv()' function.
 
 ```{r, echo=FALSE}
 read.csv('OccurrenceDataset.csv')
 ```
+
+For a single pair of species, the tool calculates the CPO value with the function 'cpo()'.
+
+```{r, echo=FALSE}
+cpoResult <- cpo(m)
+cpoResult
+```
+
+Optionally, the function also returns a distribution of iteratively randomized occurrences of species among samples (generally used to obtain the probability which the observed index differ from random) if the argument 'null.model' is set to 'TRUE' and the number of randomizations is provided using the argument 'rand'. If 'null.model' is 'TRUE' and 'rand' is not provided, a total of '999' randomizations is set by default.    
+
+```{r, echo=FALSE}
+cpoResult <- cpo(m, null.model=TRUE, rand=999)
+cpoResult
+```
+
+Multiple species are also allowed as entry data and can be handled by the function 'cpoPairWise()'. In this case, the tool calculates the index for each pair of species in the collection of samples.
+
+```{r, echo=FALSE}
+cpoResults <- cpoPairWise(m)
+cpoResults
+```
+
+
+```{r, echo=FALSE}
+cpoPairWise(m, null.model=TRUE, rand=999)
+cpoResults
+```
+
