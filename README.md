@@ -1,7 +1,7 @@
 # CPO
 ## Corrected Proportion of Occurrences (CPO) between species in a collection of samples
 
-The Corrected Proportion of Occurrences (CPO) is a tool designed to calculate the corrected cooccurrence index between pairs of species within a collection of samples. This index, denoted as CPO, acknowledges that the frequency of cooccurrence between two species is influenced by the individual occurrence frequency of each species across samples. To provide a more accurate metric for measuring the degree to which two species cooccur, the CPO is introduced. 
+The Corrected Proportion of Occurrences (CPO) is an index designed to calculate the corrected cooccurrence index between pairs of species within a collection of samples (Thomaz and Michelan 2011). This index, denoted as CPO, acknowledges that the frequency of cooccurrence between two species is influenced by the individual occurrence frequency of each species across samples. To provide a more accurate metric for measuring the degree to which two species cooccur, the CPO is introduced. 
 
 The CPO is computed using the following formula:
 
