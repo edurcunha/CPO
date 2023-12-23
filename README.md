@@ -56,3 +56,22 @@ cpoPairWise(m, null.model=TRUE, rand=999)
 cpoResults
 ```
 
+The CPO package exhibits versatility in handling structured datasets, accommodating species from various groups, samples collected from distinct sites, and data spanning different sampling periods. This flexibility enables users to compare species cooccurrence patterns across diverse categories such as species groups, sampling sites, and temporal intervals.
+
+To leverage this functionality, utilize the 'cpoPairWisePerGroup()' function. The numeric matrix 'm' should represent species presences and absences, while labels for time, sites, and species groups are specified using the parameters 'time,' 'site,' and 'spp.group,' respectively. To exemplify, consider synthetic datasets, including labels for sampling sites and times ('LabsDataset.csv'), as well as a dataset denoting species groups ('SpeciesGroupsDataset.csv'). The example below demonstrates the application of the function:
+
+```{r, echo=FALSE}
+occu <- read.csv('OccurrenceDataset.csv')
+occu <- as.matrix(occu)
+
+lab <- read.csv('LabsDataset.csv')
+
+spGroups <- read.csv('SpeciesGroupsDataset.csv')
+
+
+cpoResults <- cpoPairWisePerGroup(m = occu, 
+                                time = lab$Time,   
+                                site = lab$Sites, 
+                                spp.group = spGroups$Group,
+                                occurrence.tresh = 0)
+```
