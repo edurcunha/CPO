@@ -75,3 +75,6 @@ cpoResults <- cpoPairWisePerGroup(m = occu,
                                 spp.group = spGroups$Group,
                                 occurrence.tresh = 0)
 ```
+
+This function facilitates the comparative analysis of cooccurrence patterns, allowing users to discern potential variations across specified categories, contributing to a more comprehensive understanding of ecological dynamics.
+
