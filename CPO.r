@@ -10,3 +10,12 @@ source("cpoIndex.r")
 source("cpoRand.r")
 source("cpoPairWise.r")
 source("cpoPairWisePerGroup.r")
+
+#  AUTORSHIP:
+# Name: Eduardo Ribeiro da Cunha
+# Email: edurcunha@gmail.com
+
+#  REFERENCE
+# Thomaz, S. M. and Michelan, T. S. 2011. Associations between a
+# highly invasive species and native macrophytes differ across
+# spatial scales. Biological Invasions 13:1881–1891

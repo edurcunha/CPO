@@ -6,7 +6,7 @@
 #                        ocurrences index (CPO) for pairs of species in sets 
 #                        of sample collections.
 
-#  ARGUMENTS
+#  ARGUMENTS:
 # m: A matrix of species by samples.
 # time: A vector of labels indicating the time period of each sample.
 # site: A vector of labels indicating the site of each sample.
@@ -193,3 +193,12 @@ cpoPairWisePerGroup <- function(m, time, site, spp.group,
   return(dataset)
 
 }
+
+#  AUTORSHIP:
+# Name: Eduardo Ribeiro da Cunha
+# Email: edurcunha@gmail.com
+
+#  REFERENCE
+# Thomaz, S. M. and Michelan, T. S. 2011. Associations between a
+# highly invasive species and native macrophytes differ across
+# spatial scales. Biological Invasions 13:1881–1891

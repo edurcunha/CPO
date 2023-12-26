@@ -102,9 +102,12 @@ cpoPairWise <- function(m, ...) {
   
 }
 
-# REFERENCE
-# Stone. L. and A. Roberts. 1990. The checkerboard score and species 
-# distributions. Oecologia 85: 74-79
 
+#  AUTORSHIP:
+# Name: Eduardo Ribeiro da Cunha
+# Email: edurcunha@gmail.com
 
-
+#  REFERENCE
+# Thomaz, S. M. and Michelan, T. S. 2011. Associations between a
+# highly invasive species and native macrophytes differ across
+# spatial scales. Biological Invasions 13:1881–1891
