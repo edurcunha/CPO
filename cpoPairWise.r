@@ -103,7 +103,7 @@ cpoPairWise <- function(m, ...) {
 }
 
 
-#  AUTORSHIP:
+#  AUTHORSHIP:
 # Name: Eduardo Ribeiro da Cunha
 # Email: edurcunha@gmail.com
 

@@ -194,7 +194,7 @@ cpoPairWisePerGroup <- function(m, time, site, spp.group,
 
 }
 
-#  AUTORSHIP:
+#  AUTHORSHIP:
 # Name: Eduardo Ribeiro da Cunha
 # Email: edurcunha@gmail.com
 

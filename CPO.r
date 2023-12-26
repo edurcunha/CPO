@@ -11,7 +11,7 @@ source("cpoRand.r")
 source("cpoPairWise.r")
 source("cpoPairWisePerGroup.r")
 
-#  AUTORSHIP:
+#  AUTHORSHIP:
 # Name: Eduardo Ribeiro da Cunha
 # Email: edurcunha@gmail.com
 
